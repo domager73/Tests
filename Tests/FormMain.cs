@@ -37,6 +37,7 @@ namespace Tests
             _tests = TxtxReader.LoadFromFile(_fileName);
 
             Controls.Clear();
+            Button buttomRes;
 
             for (int i = 0; i < _tests.Count; i++)
             {
@@ -53,12 +54,11 @@ namespace Tests
                 _answers.Add(textBox);
             }
 
-            var buttomRes = new Button
+            buttomRes = new Button
             {
                 Text = "Посмотреть результаты",
                 Size = new Size(85, 80),
                 Location = new Point(200, 200),
-                Name = "buttomRes",
             };
 
             Controls.Add(buttomRes);
