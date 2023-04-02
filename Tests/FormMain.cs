@@ -60,6 +60,7 @@ namespace Tests
                 Size = new Size(85, 80),
                 Location = new Point(200, 200),
             };
+            buttomRes.Click += buttomRes_Click;
 
             Controls.Add(buttomRes);
         }
@@ -77,7 +78,7 @@ namespace Tests
             }
 
             Controls.Clear();
-            AddLable($"Общее количество ответов: {_answers.Count}\nКоличество верных ответов: {_countCorrectAnswers}", new Size(100, 100));
+            AddLable($"Общее количество вопросов: {_answers.Count}\nКоличество верных ответов: {_countCorrectAnswers}", new Size(200, 200));
         }
 
         #region Helper Methods
